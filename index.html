@@ -8,329 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 
-    <style>
-         :root {
-            --color_primary: #0A1128;
-            --Color_secondary: #01173d;
-            --color_back: #034078;
-            --color_text: #FFFFFF;
-        }
-        
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: 'Archivo', sans-serif;
-        }
-        
-        header {
-            background-color: var( --color_back);
-            height: 10em;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        header ul li {
-            display: inline;
-            margin: 0 1em 0 2em;
-        }
-        
-        header ul li a {
-            text-decoration: none;
-            color: var( --color_text);
-            letter-spacing: 0.15em;
-        }
-        
-        header img {
-            margin-left: 1em;
-        }
-        
-        .intro {
-            width: 100%;
-            height: 30em;
-            background-color: var(--color_primary);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            place-items: center;
-            align-items: center;
-            color: var( --color_text);
-            line-height: 1.8em;
-        }
-        
-        .s1 {
-            text-align: justify;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            margin: 20px;
-        }
-        
-        .s1>h2 {
-            text-transform: uppercase;
-            margin: 20px;
-            font-size: 1.85em;
-            text-align: center;
-        }
-        
-        .title {
-            font-size: 3em;
-            text-align: center;
-            margin: 1em;
-            letter-spacing: 0.1em;
-        }
-        
-        .intro2 {
-            width: 100%;
-            height: 30em;
-            background-color: var(--color_primary);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            place-items: center;
-            align-items: center;
-            color: var( --color_text);
-            grid-template-areas: "c1 c2" "c3 c4";
-            line-height: 1.8em;
-        }
-        
-        .card1 {
-            grid-area: c1;
-            text-align: justify;
-            margin: 1em;
-        }
-        
-        .card1>h2 {
-            margin: 1em;
-            text-align: center;
-            font-size: 1.85em;
-        }
-        
-        .card2 {
-            grid-area: c2;
-        }
-        
-        .card3 {
-            grid-area: c3;
-        }
-        
-        .card4 {
-            grid-area: c4;
-            text-align: justify;
-            margin: 1em;
-        }
-        
-        .card4>h2 {
-            margin: 1em;
-            font-size: 1.85em;
-            text-align: center;
-        }
-        
-        .card_area {
-            height: 200px;
-            background-color: var(--Color_secondary);
-        }
-        
-        @media screen and (max-width: 665px) and (min-width: 0px) {
-            header {
-                background-color: var( --color_back);
-                height: 4em;
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                font-size: 0.7em;
-            }
-            header ul li {
-                display: inline;
-                margin: 0 1em 0 1em;
-            }
-            header ul li a {
-                text-decoration: none;
-                color: white;
-                letter-spacing: 0.15em;
-            }
-            header img {
-                display: none;
-            }
-            .intro {
-                height: 45em;
-                background-color: var(--color_primary);
-                display: grid;
-                grid-template-columns: 100%;
-                grid-template-rows: 1fr 1fr;
-                align-items: center;
-                place-items: center;
-                color: var( --color_text);
-                line-height: 1.5em;
-            }
-            .img-intro {
-                width: 80%;
-            }
-            .s1 {
-                margin-top: 2em;
-                margin-bottom: 2em;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                color: var( --color_text);
-            }
-            .s1 p {
-                width: 100%;
-            }
-            .s1>h2 {
-                text-transform: uppercase;
-                margin: 20px;
-                font-size: 1em;
-            }
-            .title {
-                font-size: 1em;
-                text-align: center;
-                margin: 1em;
-                letter-spacing: 0.1em;
-            }
-            .intro2 {
-                width: 100%;
-                height: auto;
-                background-color: var(--color_primary);
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                place-items: center;
-                align-items: center;
-                color: var( --color_text);
-                grid-template-areas: "c1 c1" "c2 c3" "c4 c4";
-                line-height: 1.8em;
-            }
-            .card1 {
-                grid-area: c1;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 20px;
-                color: var( --color_text);
-            }
-            .card1>h2 {
-                font-size: 1em;
-            }
-            .card2 {
-                grid-area: c2;
-                width: 30%;
-            }
-            .card3 {
-                grid-area: c3;
-                width: 30%;
-            }
-            .card4 {
-                grid-area: c4;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 20px;
-                color: var( --color_text);
-            }
-            .card4>h2 {
-                font-size: 1em;
-            }
-        }
-        
-        @media screen and (max-width: 1200px) and (min-width: 665px) {
-            header {
-                background-color: var( --color_back);
-                height: 8em;
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: auto;
-            }
-            header ul li {
-                display: inline;
-                margin: 0 1em 0 1em;
-            }
-            header ul li a {
-                text-decoration: none;
-                color: white;
-                letter-spacing: 0.15em;
-            }
-            .intro {
-                width: 100%;
-                height: 40em;
-                background-color: var(--color_primary);
-                display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr;
-                align-items: center;
-                place-items: center;
-                color: var( --color_text);
-            }
-            .s1 {
-                margin-top: 4em;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 20px;
-                color: var( --color_text);
-                line-height: 1.5em;
-            }
-            .s1>h2 {
-                text-transform: uppercase;
-                margin-top: 1.5em;
-                font-size: 1.4em;
-            }
-            .title {
-                font-size: 2em;
-            }
-            .intro2 {
-                width: 100%;
-                height: 80em;
-                background-color: var(--color_primary);
-                display: grid;
-                grid-template-columns: 1fr;
-                place-items: center;
-                align-items: center;
-                color: var( --color_text);
-                grid-template-areas: "c1" "c2" "c4" "c3";
-            }
-            .card1 {
-                font-size: 1em;
-                grid-area: c1;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 20px;
-                color: var( --color_text);
-            }
-            .card1>h2 {
-                font-size: 1.5em;
-                margin: 1em;
-            }
-            .card2 {
-                grid-area: c2;
-                width: 30%;
-            }
-            .card3 {
-                grid-area: c3;
-                width: 30%;
-            }
-            .card4 {
-                font-size: 1em;
-                grid-area: c4;
-                text-align: justify;
-                display: flex;
-                align-items: center;
-                flex-direction: column;
-                margin: 20px;
-                color: var( --color_text);
-            }
-            .card4>h2 {
-                font-size: 1.5em;
-                margin: 1em;
-            }
-        }
-    </style>
+
 
 
 
@@ -339,7 +20,7 @@
 <body>
 
     <header>
-        <img src="LOGO.svg" alt="">
+        <img src="images/LOGO.svg" alt="">
         <nav>
 
 
@@ -367,7 +48,7 @@
 
     <main class="intro">
         <section class="s1">
-            <img src="dev 1.svg" alt="" class="img-intro">
+            <img src="images/dev 1.svg" alt="" class="img-intro">
         </section>
         <section class="s1">
             <h2>Entre de Cabeça neste Mundo</h2>
@@ -383,8 +64,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                 irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
         </div>
-        <img src="share-content.svg" alt="tecnologias" class="img-share card2">
-        <img src="software-quality.svg" alt="tecnologias" class="img-share card3">
+        <img src="images/share-content.svg" alt="tecnologias" class="img-share card2">
+        <img src="images/software-quality.svg" alt="tecnologias" class="img-share card3">
         <div class="card4">
             <h2>Escolha entre as diversas opções</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
@@ -392,8 +73,12 @@
         </div>
 
     </section>
+    <h2 class="title"><em>Acompanhe Abaixo o Passo a Passo do desenvolvimento de uma página</em> </h2>
     <nav class="card_area">
 
+        <div class="info-card"><img src="images/ICO_HTML (2).svg" alt=""></div>
+        <div class="info-card"><img src="images/ICO_CSS.svg" alt=""></div>
+        <div class="info-card"><img src="images/ICO_JS.svg" alt=""></div>
 
 
     </nav>
