@@ -114,7 +114,7 @@ header img {
 }
 
 .card_area {
-    height: 20em;
+    height: 15em;
     width: 100%;
     background-color: var(--Color_secondary);
     display: flex;
@@ -230,6 +230,7 @@ header img {
         font-size: 1em;
     }
     .card_area {
+        height: 8em;
         width: 100%;
         background-color: var(--Color_secondary);
         display: flex;
@@ -342,7 +343,7 @@ header img {
         margin: 1em;
     }
     .card_area {
-        height: 20em;
+        height: 12em;
         width: 100%;
         background-color: var(--Color_secondary);
         display: flex;
