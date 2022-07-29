@@ -355,3 +355,31 @@ header img {
         width: 85%;
     }
 }
+
+footer {
+    background-color: var(--color_primary);
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer h3 {
+    color: var(--color_text);
+    margin: 0.8em;
+}
+
+footer ul li {
+    display: inline;
+    margin: 1em;
+}
+
+footer address {
+    margin: 0.8em;
+    color: var(--color_text);
+}
+
+footer ul li a {
+    color: var(--color_text);
+    font-size: 2em;
+}
