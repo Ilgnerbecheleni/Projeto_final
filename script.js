@@ -47,7 +47,12 @@ btn_salvar.addEventListener("click", () => { // adicionar elemento
 });
 
 let apaga = (line) => { // apagar linha
-    var i = line.parentNode.parentNode.rowIndex; //pega a linha que se quer apagar , do elemento recebido na função
 
-    table.deleteRow(i); //deleta linha selecionada
+    if (confirm("Mano , você ta apagando a parada aí , tem certeza?")) {
+        var i = line.parentNode.parentNode.rowIndex; //pega a linha que se quer apagar , do elemento recebido na função
+
+        table.deleteRow(i); //deleta linha selecionada
+    }
+
+
 }

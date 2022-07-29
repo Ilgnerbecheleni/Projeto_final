@@ -230,7 +230,7 @@ header img {
         font-size: 1em;
     }
     .card_area {
-        height: 8em;
+        height: 9em;
         width: 100%;
         background-color: var(--Color_secondary);
         display: flex;

@@ -1,0 +1,71 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+button {
+    width: 80px;
+}
+
+:root {
+    --color_primary: #0A1128;
+    --Color_secondary: #01173d;
+    --color_back: #034078;
+    --color_text: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+}
+
+header {
+    background-color: var( --color_back);
+    height: 10em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul li {
+    display: inline;
+    margin: 0 1em 0 2em;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: var( --color_text);
+    letter-spacing: 0.15em;
+}
+
+header img {
+    margin-left: 1em;
+}
+
+button {
+    border: none;
+    padding: 1em;
+    border-radius: 0.5em;
+    margin: 0.2em;
+    text-transform: uppercase;
+    font-weight: bolder;
+    width: auto;
+}
+
+#turn_on {
+    background-color: green;
+    color: white;
+}
+
+#turn_off {
+    background-color: rgb(221, 40, 16);
+    color: white;
+}
