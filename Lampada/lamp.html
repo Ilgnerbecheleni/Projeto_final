@@ -5,15 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/e91e8bd13f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="login.css">
-
-    <title>LOGIN ALUNO</title>
-
-
-
-
-
+    <link rel="stylesheet" href="stylelamp.css">
+    <title>Lampada</title>
 </head>
 
 <body>
@@ -27,45 +20,28 @@
                 <li>
                     <a href="../index.html">INICIO</a>
                 </li>
-                <li>
-                    <a href="#">LINKS ÚTEIS</a>
-                </li>
-                <li>
-                    <a href="#">FALE CONOSCO</a>
-                </li>
-                <li>
-                    <a href="#">CONTATO</a>
-                </li>
 
+                <li>
+                    <a href="../javascript.html">FALE CONOSCO</a>
+                </li>
             </ul>
         </nav>
 
     </header>
+    <h1>LÂMPADA JS</h1>
+    <main>
+        <div>
+            <img src="./Imagens/desligada.jpg" alt="lampada" id="lamp">
+        </div>
 
+        <div>
+            <button id="turn_on">Ligar</button>
+            <button id="turn_off">Desligar</button>
+            <button id="reset">Reset</button>
 
-    <div class="content">
-
-        <img src="../images/LOGO.svg" alt="" class="img">
-
-        <form action="get">
-
-            <label for="nome"><i class="fa-solid fa-user"></i><input type="text" id="nome"></label>
-            <label for="senha"><i class="fa-solid fa-key"></i><input type="password" id="senha"></label>
-
-            <a href="../index.html" id="but">Acessar</a>
-
-            <a href="FormCadastroAluno.html" id="cad">Cadastrar</a>
-
-        </form>
-
-
-
-
-    </div>
-
-
-
-
+        </div>
+    </main>
+    <script src="lampada.js"></script>
 </body>
 
 </html>
